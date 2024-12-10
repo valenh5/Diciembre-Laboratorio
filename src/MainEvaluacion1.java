@@ -29,6 +29,13 @@ public class MainEvaluacion1 {
         sala1.eliminarPelicula(p1);
 
         cine.catalogoSalas();
+
+
+
+
+
+
+
     }
 
 }
