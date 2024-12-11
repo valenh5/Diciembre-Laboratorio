@@ -1,3 +1,5 @@
+import Persona.Persona;
+
 import java.time.LocalDate;
 
 public class Serie extends Multimedia{

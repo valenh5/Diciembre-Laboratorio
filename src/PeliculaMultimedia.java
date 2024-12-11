@@ -1,3 +1,5 @@
+import Persona.Persona;
+
 public class PeliculaMultimedia extends Multimedia{
     private Persona actorPrincipal;
     private Persona actrizPrincipal;

@@ -1,3 +1,5 @@
+import Persona.Persona;
+
 public abstract class Multimedia {
     private String titulo;
     private Persona autor;

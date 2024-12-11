@@ -41,6 +41,7 @@ public class Junior extends Socio {
     }
 
     public boolean verificarActividad(Actividad actividad) {
+
         return actividadesPermitidas.contains(actividad);
     }
 

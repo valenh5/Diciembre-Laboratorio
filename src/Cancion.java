@@ -1,3 +1,5 @@
+import Persona.Persona;
+
 public class Cancion {
     private String nombre;
     private int duracion;

@@ -3,6 +3,8 @@
 // (powered by FernFlower decompiler)
 //
 
+import Persona.Persona;
+
 import java.time.LocalDate;
 
 public abstract class Socio extends Persona {
