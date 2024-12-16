@@ -1,5 +1,7 @@
 package Mascota;
 
+import Persona.Persona;
+
 import java.util.HashSet;
 
 public class SistemaMascota {
@@ -17,7 +19,17 @@ public class SistemaMascota {
         this.mascotas = mascotas;
     }
     public void agregarMascota(Mascota mascota){
-        mascotas.add(mascota);
+        boolean esta = false;
+        for(Mascota m : mascotas){
+            if(m.getNombre().equals(mascota.getNombre())){
+                esta = true;
+            }
+        }
+        if(esta == true){
+            System.out.println("No se puede ingresar, el nombre ya esta presente");
+        }else{
+            mascotas.add(mascota);
+        }
     }
 
     public void eliminarMascota(Mascota mascota){
@@ -25,7 +37,21 @@ public class SistemaMascota {
     }
 
     public void modificarMascota(Mascota viejo, Mascota nuevo){
-        mascotas.remove(viejo);
-        mascotas.add(nuevo);
+        eliminarMascota(viejo);
+        agregarMascota(nuevo);
+    }
+
+    public void saludar(String nombre, Persona dueño){
+        for(Mascota m : mascotas){
+            if(m.getNombre().equals(nombre)){
+                m.saludo(dueño);
+            }
+            if(m instanceof Pez){
+                if(((Pez) m).getVidas() == 0){
+                    eliminarMascota(m);
+                }
+            }
+
+        }
     }
 }

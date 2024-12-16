@@ -29,7 +29,7 @@ public class MainEvaluacion4 {
         surtidores2.add(surtidor3);
         surtidores2.add(surtidor4);
         SucursalEstacion sucursalUrquiza = new SucursalEstacion(empleadosMain, surtidores1, 1000);
-        SucursalEstacion sucursalShell = new SucursalEstacion(empleadosMain, surtidores2, 0);
+        SucursalEstacion sucursalShell = new SucursalEstacion(empleadosMain, surtidores2, 5648790);
         HashSet<SucursalEstacion> sucursales = new HashSet<>();
         sucursales.add(sucursalShell);
         EmpresaCombustible shell = new EmpresaCombustible("Shell", sucursales);
@@ -40,6 +40,6 @@ public class MainEvaluacion4 {
         } catch (FaltaCombustibleException e) {
             e.getMessage();
         }
-        shell.recogerGanancias();
+        System.out.println(shell.recogerGanancias());
     }
 }

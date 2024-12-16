@@ -30,7 +30,7 @@ public class Surtidor {
     }
 
     public void cargarCombustibleSurtidor(Combustible tipo, int cantidad) throws FaltaCombustibleException {
-        if(getCombustibles().get(tipo) > cantidad){
+        if(combustibles.get(tipo) > cantidad){
             int nuevo = getCombustibles().get(tipo) - cantidad;
             getCombustibles().remove(tipo);
             getCombustibles().put(tipo, nuevo);

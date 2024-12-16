@@ -36,4 +36,9 @@ public abstract class Mascota {
                 ", dueño=" + dueño.getNombre() +
                 '}';
     }
+
+    public int num(){
+        System.out.println("OK");
+        return 1;
+    }
 }
